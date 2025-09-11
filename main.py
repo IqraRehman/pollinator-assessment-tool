@@ -52,30 +52,7 @@ def main():
         Join thousands of others in making their homes safer for pollinators!
         """)
 
-        # Custom button styling with animations
-        st.markdown("""
-        <style>
-        .start-button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem 2rem;
-            font-size: 1.2rem;
-            border-radius: 10px;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-            text-align: center;
-            margin: 2rem 0;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .start-button:hover {
-            background-color: #45a049;
-            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
-            transform: translateY(-2px);
-        }
-        </style>
-        """, unsafe_allow_html=True)
+        # The button will use the default Streamlit styling
 
         if st.button("Start Assessment ➡️", use_container_width=True):
             st.balloons()  # Add a fun animation effect
