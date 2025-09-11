@@ -108,7 +108,7 @@ def main():
     with col2:
         if st.button("Start Over"):
             st.session_state.clear()
-            st.switch_page("main.py")
+            st.switch_page("streamlit_app.py")
 
 if __name__ == "__main__":
     main()
