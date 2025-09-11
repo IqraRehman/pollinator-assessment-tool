@@ -77,7 +77,7 @@ def main():
         </style>
         """, unsafe_allow_html=True)
 
-        if st.button("Start Assessment ➡️", type="primary", use_container_width=True):
+        if st.button("Start Assessment ➡️", use_container_width=True):
             st.balloons()  # Add a fun animation effect
             st.switch_page("pages/01_questionnaire.py")
 
