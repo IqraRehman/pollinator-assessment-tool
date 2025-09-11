@@ -1,0 +1,71 @@
+/* Button Animations */
+.stButton button {
+    transition: all 0.3s ease;
+    transform: translateY(0);
+}
+
+.stButton button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.stButton button:active {
+    transform: translateY(0);
+}
+
+/* Expander Animations */
+.streamlit-expanderHeader {
+    transition: background-color 0.3s ease;
+}
+
+.streamlit-expanderHeader:hover {
+    background-color: rgba(76, 175, 80, 0.1);
+}
+
+/* Card Animations */
+div[data-testid="stExpander"] {
+    transition: all 0.3s ease;
+}
+
+div[data-testid="stExpander"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Progress Bar Animations */
+div[data-testid="stProgressBar"] {
+    transition: width 0.8s ease-in-out;
+}
+
+/* Image Hover Effects */
+div[data-testid="stImage"] {
+    transition: transform 0.3s ease;
+}
+
+div[data-testid="stImage"]:hover {
+    transform: scale(1.02);
+}
+
+/* Text Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.element-container {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Sidebar Animation */
+.css-1d391kg {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Radio Button Animation */
+.stRadio > label {
+    transition: all 0.2s ease;
+}
+
+.stRadio > label:hover {
+    transform: translateX(5px);
+}
