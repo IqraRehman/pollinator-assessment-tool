@@ -11,9 +11,13 @@ st.set_page_config(
     initial_sidebar_state="collapsed"  # Start with collapsed sidebar for better layout
 )
 
-# Load custom CSS
-with open('.streamlit/custom.css') as f:
-    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+# Load custom CSS (with error handling for deployment)
+try:
+    with open('.streamlit/custom.css') as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+except FileNotFoundError:
+    # CSS file not found - app will work without custom styles
+    pass
 
 def load_image(url):
     """Load an image from URL with error handling and cache prevention"""
