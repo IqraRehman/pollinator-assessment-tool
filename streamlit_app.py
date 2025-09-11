@@ -83,9 +83,9 @@ def main():
 
     with col2:
         # Updated to a proper bee image
-        bee_image = load_image("https://images.unsplash.com/photo-1528740561666-dc2479dc08ab")
+        bee_image = load_image("https://images.unsplash.com/photo-1558618666-fcd25c85cd64")
         if bee_image:
-            st.image(bee_image, caption="Natural cleaning supplies", use_container_width=True)
+            st.image(bee_image, caption="Honey bee pollinating flowers", use_container_width=True)
 
     st.markdown("---")
 
@@ -131,9 +131,9 @@ def main():
     story_cols = st.columns(2)
 
     with story_cols[0]:
-        garden_image = load_image("https://images.unsplash.com/photo-1528740561666-dc2479dc08ab")
+        garden_image = load_image("https://images.unsplash.com/photo-1416879595882-3373a0480b5b")
         if garden_image:
-            st.image(garden_image, caption="Natural cleaning supplies", use_container_width=True)
+            st.image(garden_image, caption="Thriving garden with pollinators", use_container_width=True)
         st.markdown("""
         ### "Small Changes, Big Impact"
         After switching to eco-friendly cleaning products, local gardeners reported 
@@ -141,9 +141,9 @@ def main():
         """)
 
     with story_cols[1]:
-        community_image = load_image("https://images.unsplash.com/photo-1610557892470-55d9e80c0bce")
+        community_image = load_image("https://images.unsplash.com/photo-1464207687429-7505649dae38")
         if community_image:
-            st.image(community_image, caption="Eco-friendly cleaning workshop", use_container_width=True)
+            st.image(community_image, caption="Pollinator-friendly community garden", use_container_width=True)
         st.markdown("""
         ### "Community in Action"
         A neighborhood's collective switch to pollinator-friendly practices led to
