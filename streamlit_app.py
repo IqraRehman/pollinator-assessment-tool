@@ -60,7 +60,7 @@ def main():
 
     with col2:
         # Updated to a proper bee image
-        bee_image = load_image("https://images.unsplash.com/photo-1558618666-fcd25c85cd64")
+        bee_image = load_image("https://github.com/IqraRehman/pollinator-assessment-tool/raw/main/assets/welcome-image.jpg")
         if bee_image:
             st.image(bee_image, caption="Honey bee pollinating flowers", use_container_width=True)
 
@@ -108,7 +108,7 @@ def main():
     story_cols = st.columns(2)
 
     with story_cols[0]:
-        garden_image = load_image("https://images.unsplash.com/photo-1416879595882-3373a0480b5b")
+        garden_image = load_image("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80")
         if garden_image:
             st.image(garden_image, caption="Thriving garden with pollinators", use_container_width=True)
         st.markdown("""
